@@ -1,16 +1,16 @@
 # Euterpe-1
 
-//Padrões --------------------------------------------------------------------
+Padrões --------------------------------------------------------------------
 
-  // # # # # # # # # # # # # # # # # # # # # # #
-  // ESCALA MAIOR NATURAL
-  // -------------------------------------------
-  // Todas as TAGS DE NOTAS precisam vir acompa-
-  // nhadas por parêntesis.
-  //
-  //    Ex.: C() ou Gsus()
-  //
-  // A exceção é a pausa, que deve ser usada sem
+# # # # # # # # # # # # # # # # # # # # # #
+ESCALA MAIOR NATURAL
+-------------------------------------------
+Todas as TAGS DE NOTAS precisam vir acompa-
+nhadas por parêntesis.
+
+   Ex.: C() ou Gsus()
+
+A exceção é a pausa, que deve ser usada sem
   // os parêntesis.
   //
   //    Ex.: pausa     ---   correto
