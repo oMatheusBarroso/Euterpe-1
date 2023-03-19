@@ -3,8 +3,12 @@
    A code to read songs transposed (within standards) from scores and run them on an Arduino Uno with a buzzer.
    
    Um código para ler músicas transpostas (dentro dos padrões) de partituras e executar elas em um Arduino Uno com buzzer.
+   
+---
 
-## ESCALA MAIOR NATURAL
+## Padronização para Transposição de Partituras
+
+### ESCALA MAIOR NATURAL
 
    Todas as TAGS DE NOTAS precisam vir acompanhadas por parêntesis.
 
@@ -16,7 +20,7 @@
 > - `pausa`     ---   correto
 > - `pausa()`   ---   INCORRETO
         
-### LISTA DE TAGS
+#### LISTA DE TAGS
 
 TAG       | Nota             | Frequência
 :-------: | :--------------- | :--------:
@@ -48,7 +52,7 @@ B         | Si               | 495 Hz
 
 ---
 
-## OITAVAS
+### OITAVAS
 
    O código suporta 4 oitavas acima e 3 oitavas abaixo das notas naturais. 
    
@@ -56,7 +60,7 @@ B         | Si               | 495 Hz
    
 > Ex.: `nota(oitava)`
 
-### Representação das oitavas
+#### Representação das oitavas
 
 Representação | Oitava
 :-----------: | :-
@@ -72,7 +76,7 @@ i             | 1 oitava abaixo
 ii            | 2 oitavas abaixo
 iii           | 3 oitavas abaixo
 
-#### Exemplos:
+##### Exemplos:
    
 Nota  | Código
 :--- | :----:
@@ -85,14 +89,14 @@ Lá bemol, 1 oitava abaixo | `Ab(i)`
 
 ---
    
-## Figuras e Tempos
+### Figuras e Tempos
 
    É necessário inserir o ritmo/passo da música em BPM (batidas por minuto) no início do código para que o tempo das figuras seja calculado.
 
    Por padrão o ritmo será 120 BPM.
    
 
-### LISTA DE TAGS
+#### LISTA DE TAGS
 TAG       | Nota          | Duração
 :-------: | :------------ | :-----:
 sbre      | Semibreve     | 1
@@ -112,13 +116,13 @@ sfusa     | Semifusa      | 1/64
  
 ---
 
-## Pontos de aumento e diminuição da duração
+### Pontos de aumento e diminuição da duração
  
    Para alterar a duração das notas, basta colocar sua representação entre os parêntesis das figuras.
 
 >Ex.: `figura(duração)`
 
-### Representação dos pontos duração
+#### Representação dos pontos duração
 
 Representação | Duração
 :-----------: | :------
@@ -127,7 +131,7 @@ n             | natural
 p             | ponto de aumento
 s             | staccato (ponto de diminuição)
 
-#### Exemplos:
+##### Exemplos:
 
 Nota | Duração | Código
 :--- | :-----: | :----:
