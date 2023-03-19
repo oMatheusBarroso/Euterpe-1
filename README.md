@@ -14,9 +14,9 @@
 - **[Linha 2:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L2)** precisa ser inserido o BPM da música, se conhecido: `float bpm = 120;`
 - **[Linha 6:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L6)** deve ser inserido o pino correto do Arduino em que o buzzer está ligado
 - **[Linha 199:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L199)** se necessário, pode-se transpor a partitura inteira em oitavas alterando o valor numérico: `byte transposition = 1;`
-- **[Linha 202:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L202)** ritmo de reprodução da música: `float rhythm = 1;`
+- **[Linha 202:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L202)** o ritmo de reprodução da música pode ser alterado, trocando o valor numérico: `float rhythm = 1;`
 
-A transposição da partitura começa na **[linha 207](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L207)**.
+A transposição da partitura começa na **[linha 207](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L207)** e vai até a **[linha 237](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L237)** do código de exemplo (v6).
 
 ### Principais Regras
 
