@@ -1,12 +1,59 @@
 # EuterpeOne
    
-   A code to read songs transposed (within standards) from scores and run them on an Arduino Uno with a buzzer.
+   A program to read songs transcribed from sheet to code, following a pattern, and run them on an Arduino Uno with a buzzer. ***Text in portuguese***.
    
-   Um código para ler músicas transpostas (dentro dos padrões) de partituras e executar elas em um Arduino Uno com buzzer.
+   Um programa para ler músicas transcritas da partitura para o código, seguindo um padrão, e executá-las em um Arduino Uno com buzzer.
    
 ---
 
-## Padronização para Transposição de Partituras
+## Pontos de Atenção
+
+### Linhas de Código
+
+- **[Linha 1:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L1)** está comentado o nome da música, para identificação: `// NOME DA MÚSICA: Davy Jones' Locket`
+- **[Linha 2:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L2)** precisa ser inserido o BPM da música, se conhecido: `float bpm = 120;`
+- **[Linha 6:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L6)** deve ser inserido o pino correto do Arduino em que o buzzer está ligado
+- **[Linha 199:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L199)** se necessário, pode-se transpor a partitura inteira em oitavas alterando o valor numérico: `byte transposition = 1;`
+- **[Linha 202:](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L202)** ritmo de reprodução da música: `float rhythm = 1;`
+
+A transposição da partitura começa na **[linha 207](https://github.com/oMatheusBarroso/EuterpeOne/blob/edcb6ff595e6243eca5d1ba60299b107628dc573/EuterpeOne-v6.ino#L207)**.
+
+### Principais Regras
+
+A partitura precisa ser transcrita dentro da seguinte estrutura, para funcionar corretamente:
+
+```
+int melody[][2]{
+  
+  TRANSCRIÇÃO
+  
+};
+```
+
+A forma de organização não interfere no funcionamento, desde que:
+- cada nota e sua respectiva duração estejam entre chaves e separadas por vírgula:  `{nota,duração}`
+- cada nota esteja separada por vírgulas das demais:  `{nota1,duração},  {nota2,duração}, ...`
+- a última nota não seja sucedida por uma vírgula:  `{última_nota,duração}`
+- não haja alterações na estrutura acima.
+
+#### Exemplo:
+
+```
+int melody[][2]{
+  {nota1,duração},  {nota2,duração},
+  
+  {nota3,duração},
+  {nota4,duração},
+  
+  ...
+  
+  {última_nota,duração}
+};
+```
+
+---
+
+## Padronização para Transcrição de Partituras
 
 ### ESCALA MAIOR NATURAL
 
