@@ -1,8 +1,8 @@
 # EuterpeOne
    
-   A program to read songs transcribed from sheet to code, following a pattern, and run them on an Arduino Uno with a buzzer. ***Text in portuguese***.
+   A program to read songs transcribed from sheet to code, following a pattern, and run them on an Arduino Uno with a buzzer. Project named after the Greek Muse of Music, Euterpe. ***< Text in portuguese >***.
    
-   Um programa para ler músicas transcritas da partitura para o código, seguindo um padrão, e executá-las em um Arduino Uno com buzzer.
+   Um programa para ler músicas transcritas da partitura para o código, seguindo um padrão, e executá-las em um Arduino Uno com buzzer. Projeto nomeado em referência à Musa Grega da Música, Euterpe.
    
 ---
 
@@ -96,6 +96,14 @@ Asus      | Lá sustenido     | 467 Hz
 Bb        | Si bemol         |  idem
 --- |  | 
 B         | Si               | 495 Hz 
+
+##### Exemplos:
+   
+Nota         | Código
+:----------- | :------:
+Dó           | `C()`
+Fá sustenido | `Fsus()`
+Si bemol     | `Bb()`
 
 ---
 
