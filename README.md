@@ -5,10 +5,13 @@ Um código para ler músicas transpostas (dentro dos padrões) de partituras e e
 ## ESCALA MAIOR NATURAL
 
 Todas as TAGS DE NOTAS precisam vir acompanhadas por parêntesis.
+
    Ex.: C() ou Gsus()
 
 A exceção é a pausa, que deve ser usada sem os parêntesis.
+
    Ex.: pausa     ---   correto
+   
         pausa()   ---   INCORRETO
         
 ### LISTA DE TAGS
